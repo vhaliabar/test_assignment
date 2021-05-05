@@ -1,0 +1,11 @@
+{% extends "base_bootstrap.html" %}
+{% block content %}
+<h1>видалити курс</h1>
+
+<p>Ви готові назавжди видалити: {{ course }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Так, видалити.">
+</form>
+{% endblock %}
